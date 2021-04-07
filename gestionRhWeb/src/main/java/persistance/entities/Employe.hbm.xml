@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 avr. 2021 ? 09:42:20 by Hibernate Tools 4.0.1.Final -->
+<hibernate-mapping>
+    <class name="persistance.entities.Employe" table="EMPLOYE" schema="RISBO">
+        <id name="code" type="big_decimal">
+            <column name="CODE" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nom" type="string">
+            <column name="NOM" length="20" />
+        </property>
+        <property name="prenom" type="string">
+            <column name="PRENOM" length="20" />
+        </property>
+        <property name="adresse" type="string">
+            <column name="ADRESSE" length="20" />
+        </property>
+        <property name="salaire" type="java.lang.Double">
+            <column name="SALAIRE" precision="126" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
